@@ -1,6 +1,6 @@
 .App {
   background: #fff;
-  font-family: Montserrat, fantasy;
+  font-family: Montserrat, monospace;
   font-weight: 300;
   font-style: normal;
   line-height: 1;
@@ -15,11 +15,12 @@
   bottom: 0;
   width: 30%;
   padding: 0;
+  background-color: beige;
 }
 
 .SideBar-content {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 40px 40px 135px;
 }
 
@@ -71,7 +72,7 @@
 
 .SideBar-menu__list__item {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0;
@@ -83,6 +84,12 @@
   color: #2a2f36;
   font-weight: 500;
   text-decoration: none;
+}
+
+.SideBar-menu__footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 30px;
 }
 
 .MainPage {
