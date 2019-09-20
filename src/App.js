@@ -23,11 +23,11 @@ function Menu() {
 }
 
 function App() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 600);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
 
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
-      setIsSmallScreen(window.innerWidth < 600);
+      setIsSmallScreen(window.innerWidth <= 768);
     }, 100);
 
     window.addEventListener('resize', debouncedHandleResize);
