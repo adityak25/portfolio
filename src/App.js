@@ -4,23 +4,11 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import ProjectsPage from './pages/Projects';
 import TimelinePage from './pages/Timeline';
+import Menu from './components/Menu/Menu';
 import MenuHeader from './components/Menu/MenuHeader';
-import MenuContent from './components/Menu/MenuContent';
 import MenuFooter from './components/Menu/MenuFooter';
 import debounce from './utilities/helper';
 import './App.css';
-
-function Menu() {
-  return (
-    <div className='Menu'>
-      <div className='Menu-content'>
-        <MenuHeader />
-        <MenuContent />
-        <MenuFooter />
-      </div>
-    </div>
-  );
-}
 
 function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
