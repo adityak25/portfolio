@@ -33,11 +33,10 @@ function App() {
         <div className={!isSmallScreen ? 'MainPage' : ''}>
           {isSmallScreen && <MenuHeader />}
           <div className='MainPage-content'>
-            <Route exact path='/' component={AboutPage} />
-            <Route path='/about' component={AboutPage} />
-            <Route path='/projects' component={ProjectsPage} />
-            <Route path='/timeline' component={TimelinePage} />
-            <Route path='/contact' component={ContactPage} />
+            <AboutPage />
+            <ProjectsPage />
+            <TimelinePage />
+            {/* <ContactPage /> */}
           </div>
           {isSmallScreen && <MenuFooter />}
         </div>

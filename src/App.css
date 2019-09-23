@@ -1,10 +1,4 @@
 .App {
-  background: #fff;
-  font-family: Montserrat, monospace;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1;
-  color: #6c7a89;
 }
 
 .Menu {
@@ -46,7 +40,6 @@
 @media only screen and (min-width: 1024px) {
   .Menu-content {
     position: relative;
-    min-height: 76vh;
     padding: 40px 40px 135px;
   }
 }
@@ -62,41 +55,41 @@
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1;
-  color: rgba(245, 247, 255, 0.9);
+  color: #fff;
   text-decoration: none;
+  font-family: Merriweather, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
+  .Menu-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1220px) {
   .Menu-title {
     font-size: 35px;
   }
 }
 
-@media only screen and (min-width: 1220px) {
-  .Menu-title {
-    font-size: 45px;
-  }
-}
-
 .Menu-title__tagline {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.5;
-  color: lightblue;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (min-width: 768px) {
   .Menu-title__tagline {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
 @media only screen and (min-width: 1220px) {
   .Menu-title__tagline {
-    margin-top: 30px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -166,16 +159,14 @@
 
 .Menu__list__item {
   margin-top: 15px;
-  font-size: 18px;
-  font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 .Menu__list__item__link {
   font-size: 30px;
-  font-weight: 500;
-  color: rgba(245, 247, 255, 0.9);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
   padding: 10px 0;
   text-decoration: none;
 }
@@ -184,13 +175,12 @@
   .Menu__list__item__link {
     padding: 0;
     font-size: 17px;
-    color: rgba(245, 247, 255, 0.9);
   }
 }
 
 @media only screen and (min-width: 1220px) {
   .Menu__list__item__link {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -198,7 +188,7 @@ a.Menu__list__item__link:hover,
 a.Menu__list__item__link:focus,
 a.Menu-title:hover,
 a.Menu-title:focus {
-  color: white;
+  color: #fff;
 }
 
 .Menu__footer {
@@ -212,17 +202,23 @@ a.Menu-title:focus {
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .Menu__footer {
+    padding-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 1220px) {
   .Menu__footer {
     padding: 10px 20px 20px;
-    background: rgb(35, 39, 65);
   }
 }
 
 @media only screen and (min-width: 1220px) {
   .Menu__footer {
     bottom: 40px;
-    left: 60px;
+    left: 50px;
   }
 }
 
@@ -240,9 +236,8 @@ a.Menu-title:focus {
 .MainPage-content {
   float: left;
   clear: both;
-  width: 100%;
   height: 100%;
-  background-color: cornsilk;
+  padding: 5%;
 }
 
 .socials {
@@ -280,9 +275,9 @@ a.Menu-title:focus {
   position: relative;
   display: block;
   border-radius: 100%;
-  background: #abb7b7;
+  background: rgba(255, 255, 255, 0.7);
   line-height: 1;
-  color: #fff;
+  color: #161b21;
 }
 
 .socials__item__link svg {
@@ -329,7 +324,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 a.socials__item__link:hover {
-  background-color: gray;
+  background-color: #fff;
 }
 
 .particles {
@@ -337,7 +332,6 @@ a.socials__item__link:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
   height: 100%;
-  width: 30%;
+  width: 25%;
 }
