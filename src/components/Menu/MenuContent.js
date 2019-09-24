@@ -14,8 +14,7 @@ export default function MenuContent() {
               smooth={true}
               offset={-70}
               duration={1000}
-              className='menu__list__item__link'
-            >
+              className='menu__list__item__link'>
               Home
             </Link>
           </li>
@@ -28,8 +27,7 @@ export default function MenuContent() {
               smooth={true}
               offset={-70}
               duration={1000}
-              className='menu__list__item__link'
-            >
+              className='menu__list__item__link'>
               Projects
             </Link>
           </li>
@@ -42,8 +40,7 @@ export default function MenuContent() {
               smooth={true}
               offset={-70}
               duration={1000}
-              className='menu__list__item__link active-link'
-            >
+              className='menu__list__item__link active-link'>
               Timeline
             </Link>
           </li>

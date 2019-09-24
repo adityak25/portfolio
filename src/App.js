@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
+import Particles from 'react-particles-js';
+import { particlesParams } from './constants/particlesParams';
+import debounce from './utilities/helper';
+import './App.css';
+import MenuFooter from './components/Menu/MenuFooter';
+import MenuContent from './components/Menu/MenuContent';
+import MenuHeader from './components/Menu/MenuHeader';
 import AboutPage from './pages/About';
 import ProjectsPage from './pages/Projects';
 import TimelinePage from './pages/Timeline';
-import Menu from './components/Menu/Menu';
-import debounce from './utilities/helper';
-import './App.css';
 
 function App() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
 
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
-      setIsSmallScreen(window.innerWidth <= 768);
+      setIsSmallScreen(window.innerWidth <= 1024);
     }, 100);
 
     window.addEventListener('resize', debouncedHandleResize);
@@ -23,12 +27,29 @@ function App() {
 
   return (
     <React.Fragment>
-      <Menu></Menu>
+      <header className='header'>
+        <Particles className='particles' params={particlesParams} />
+        <div className='header-overlay'></div>
+        <div className='header__content'>
+          <MenuHeader></MenuHeader>
+          <MenuContent></MenuContent>
+          {!isSmallScreen && <MenuFooter></MenuFooter>}
+        </div>
+      </header>
       <div className='page'>
         <AboutPage />
         <ProjectsPage />
         <TimelinePage />
       </div>
+      <footer className='footer'>
+        {isSmallScreen && <MenuFooter />}
+        <div className='footer__copyright'>
+          <span>© 2019.</span>
+          <a href='/' target='_blank'>
+            All rights reserved.
+          </a>
+        </div>
+      </footer>
     </React.Fragment>
   );
 }

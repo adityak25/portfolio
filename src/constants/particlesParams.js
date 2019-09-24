@@ -26,7 +26,7 @@ export const particlesParams = {
       }
     },
     opacity: {
-      value: 0.5,
+      value: 0.7,
       random: false,
       anim: {
         enable: false,
@@ -72,7 +72,7 @@ export const particlesParams = {
     events: {
       onhover: {
         enable: true,
-        mode: 'repulse'
+        mode: 'grab'
       },
       onclick: {
         enable: false,
