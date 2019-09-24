@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function MenuHeader() {
   return (
-    <div className='Menu-header'>
+    <React.Fragment>
       <Link
         activeClass='active'
         to='home'
@@ -11,10 +11,11 @@ export default function MenuHeader() {
         smooth={true}
         offset={-70}
         duration={500}
-        className='Menu-title'>
+        className='header__title'
+      >
         Aditya Kankanala
       </Link>
-      <h1 className='Menu-title__tagline'>I'm a frontend developer</h1>
-    </div>
+      <p className='header__tagline'>I'm a frontend developer.</p>
+    </React.Fragment>
   );
 }

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function MenuContent() {
   return (
-    <div className='Menu__sub'>
-      <div className='Menu__wrap'>
-        <ul className='Menu__list'>
-          <li className='Menu__list__item'>
+    <div className='menu'>
+      <div className='menu__wrap'>
+        <ul className='menu__list'>
+          <li className='menu__list__item'>
             <Link
               activeClass='active'
               to='home'
@@ -14,12 +14,13 @@ export default function MenuContent() {
               smooth={true}
               offset={-70}
               duration={1000}
-              className='Menu__list__item__link'>
+              className='menu__list__item__link'
+            >
               Home
             </Link>
           </li>
 
-          <li className='Menu__list__item'>
+          <li className='menu__list__item'>
             <Link
               activeClass='active'
               to='projects'
@@ -27,12 +28,13 @@ export default function MenuContent() {
               smooth={true}
               offset={-70}
               duration={1000}
-              className='Menu__list__item__link'>
+              className='menu__list__item__link'
+            >
               Projects
             </Link>
           </li>
 
-          <li className='Menu__list__item'>
+          <li className='menu__list__item'>
             <Link
               activeClass='active'
               to='timeline'
@@ -40,18 +42,19 @@ export default function MenuContent() {
               smooth={true}
               offset={-70}
               duration={1000}
-              className='Menu__list__item__link active-link'>
+              className='menu__list__item__link active-link'
+            >
               Timeline
             </Link>
           </li>
 
-          {/* <li className='Menu__list__item'>
+          {/* <li className='menu__list__item'>
               <Link activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500} className='Menu__list__item__link'>
+                duration={500} className='menu__list__item__link'>
                 Contact
               </Link>
             </li> */}

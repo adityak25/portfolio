@@ -1,25 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Particles from 'react-particles-js';
-import { particlesParams } from './../../constants/particlesParams';
-import MenuHeader from './MenuHeader';
 import MenuContent from './MenuContent';
+import { particlesParams } from './../../constants/particlesParams';
 import MenuFooter from './MenuFooter';
+import MenuHeader from './MenuHeader';
 
-class Menu extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <div className='Menu'>
-          <Particles className='particles' params={particlesParams} />
-          <div className='Menu-content'>
-            <MenuHeader />
-            <MenuContent />
-            <MenuFooter />
-          </div>
-        </div>
-      </React.Fragment>
-    );
-  }
+export default function Menu() {
+  return (
+    <header className='header'>
+      <Particles className='particles' params={particlesParams} />
+      <div className='header-overlay'></div>
+      <div className='header__content'>
+        <MenuHeader></MenuHeader>
+        <MenuContent></MenuContent>
+        <MenuFooter></MenuFooter>
+      </div>
+    </header>
+  );
 }
-
-export default Menu;

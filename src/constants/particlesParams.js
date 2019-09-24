@@ -1,7 +1,7 @@
 export const particlesParams = {
   particles: {
     number: {
-      value: 10,
+      value: 25,
       density: {
         enable: false,
         value_area: 0
@@ -54,7 +54,7 @@ export const particlesParams = {
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 3,
       direction: 'none',
       random: false,
       straight: false,
@@ -72,7 +72,7 @@ export const particlesParams = {
     events: {
       onhover: {
         enable: true,
-        mode: 'grab'
+        mode: 'repulse'
       },
       onclick: {
         enable: false,
@@ -95,7 +95,7 @@ export const particlesParams = {
         speed: 3
       },
       repulse: {
-        distance: 200,
+        distance: 100,
         duration: 0.4
       },
       push: {
