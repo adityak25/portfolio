@@ -12,7 +12,10 @@ export default function ProjectsPage() {
       <section className='portfolio'>
         <div className='wrap'>
           <div className='portfolio-item'>
-            <a className='portfolio-item__link' href='/project/paper-flowers'>
+            <a
+              className='portfolio-item__link'
+              href='#'
+              onClick={e => e.preventDefault()}>
               <div
                 className='portfolio-item__image'
                 style={{
@@ -22,15 +25,34 @@ export default function ProjectsPage() {
 
               <div className='portfolio-item__content'>
                 <div className='portfolio-item__info'>
-                  <h2 className='portfolio-item__title'>Paper Flowers</h2>
-                  <p className='portfolio-item__subtitle'>DIY crafting kit</p>
+                  <h2 className='portfolio-item__title'>Event Book</h2>
+                  <p className='portfolio-item__subtitle'>
+                    Create, find & reserve events
+                  </p>
                 </div>
               </div>
             </a>
+            <div className='portfolio-item__codelink'>
+              <a
+                href='https://github.com/adityak25'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Demo
+              </a>
+              <a
+                href='https://github.com/adityak25'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Code
+              </a>
+            </div>
           </div>
 
           <div className='portfolio-item'>
-            <a className='portfolio-item__link' href='/project/prism'>
+            <a
+              className='portfolio-item__link'
+              href='#'
+              onClick={e => e.preventDefault()}>
               <div
                 className='portfolio-item__image'
                 style={{
@@ -40,11 +62,27 @@ export default function ProjectsPage() {
 
               <div className='portfolio-item__content'>
                 <div className='portfolio-item__info'>
-                  <h2 className='portfolio-item__title'>Prism</h2>
-                  <p className='portfolio-item__subtitle'>Foliage Art</p>
+                  <h2 className='portfolio-item__title'>Event Book</h2>
+                  <p className='portfolio-item__subtitle'>
+                    Create, find & reserve events
+                  </p>
                 </div>
               </div>
             </a>
+            <div className='portfolio-item__codelink'>
+              <a
+                href='https://github.com/adityak25'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Demo
+              </a>
+              <a
+                href='https://github.com/adityak25'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Code
+              </a>
+            </div>
           </div>
         </div>
       </section>

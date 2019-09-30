@@ -44,10 +44,7 @@ function App() {
       <footer className='footer'>
         {isSmallScreen && <MenuFooter />}
         <div className='footer__copyright'>
-          <span>© 2019.</span>
-          <a href='/' target='_blank'>
-            All rights reserved.
-          </a>
+          <span>© 2019. All rights reserved.</span>
         </div>
       </footer>
     </React.Fragment>

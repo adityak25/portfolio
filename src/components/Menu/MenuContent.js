@@ -8,11 +8,11 @@ export default function MenuContent() {
         <ul className='menu__list'>
           <li className='menu__list__item'>
             <Link
-              activeClass='active'
+              activeClass='active-link'
               to='home'
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={1000}
               className='menu__list__item__link'>
               Home
@@ -21,11 +21,11 @@ export default function MenuContent() {
 
           <li className='menu__list__item'>
             <Link
-              activeClass='active'
+              activeClass='active-link'
               to='projects'
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={1000}
               className='menu__list__item__link'>
               Projects
@@ -34,13 +34,13 @@ export default function MenuContent() {
 
           <li className='menu__list__item'>
             <Link
-              activeClass='active'
+              activeClass='active-link'
               to='timeline'
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={1000}
-              className='menu__list__item__link active-link'>
+              className='menu__list__item__link'>
               Timeline
             </Link>
           </li>

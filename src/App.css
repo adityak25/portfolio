@@ -5,7 +5,7 @@
     bottom: 0;
     left: 0;
     height: 100%;
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -35,4 +35,8 @@
   .menu__list__item__link {
     font-size: 15px;
   }
+}
+
+.vertical-timeline-element-content.bounce-in:hover {
+  background: aliceblue;
 }

@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 export default function TimelinePage() {
   return (
@@ -11,57 +16,52 @@ export default function TimelinePage() {
       </section>
       <section className='blog single'>
         <div className='wrap'>
-          <article className='blog-post'>
-            <div className='blog-post__header'>
-              <h2 className='blog-post__title'>
-                <a href='/'>Hitting The Road</a>
-              </h2>
-              <p className='blog-post__subtitle'>30 June 2018</p>
-            </div>
-
-            <a
-              href='/'
-              className='blog-post__image'
-              style={{
-                backgroundImage:
-                  "url('https://d1qmdf3vop2l07.cloudfront.net/jovial-peafowl.cloudvent.net/compressed/_min_/b6ee2edcabcf225c7f448c61784091c9.jpg')"
-              }}></a>
-
-            <div className='blog-post__content'>
-              <p>
-                This page is a demo that shows everything you can do inside
-                portfolio and blog posts. We've included everything you need to
-                create engaging posts about your work, and show off your case
-                studies in a beautiful way.
-              </p>
-            </div>
-          </article>
-
-          <article className='blog-post'>
-            <div className='blog-post__header'>
-              <h2 className='blog-post__title'>
-                <a href='/'>Down The River</a>
-              </h2>
-              <p className='blog-post__subtitle'>29 June 2018</p>
-            </div>
-
-            <a
-              href='/'
-              className='blog-post__image'
-              style={{
-                backgroundImage:
-                  "url('https://d1qmdf3vop2l07.cloudfront.net/jovial-peafowl.cloudvent.net/compressed/_min_/faf56ff7f9a0f1bf956a8e753a647fe8.jpg')"
-              }}></a>
-
-            <div className='blog-post__content'>
-              <p>
-                This page is a demo that shows everything you can do inside
-                portfolio and blog posts. We've included everything you need to
-                create engaging posts about your work, and show off your case
-                studies in a beautiful way.
-              </p>
-            </div>
-          </article>
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className='vertical-timeline-element--work'
+              date='Oct 2016 - Present'
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+              <h3 className='vertical-timeline-element-title'>
+                Software Developer
+              </h3>
+              <h4 className='vertical-timeline-element-subtitle'>Folsom, CA</h4>
+              <p></p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className='vertical-timeline-element--work'
+              date='Mar 2016 - Sep 2016'
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+              <h3 className='vertical-timeline-element-title'>
+                Custom Web Developer
+              </h3>
+              <h4 className='vertical-timeline-element-subtitle'>Folsom, CA</h4>
+              <p></p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className='vertical-timeline-element--work'
+              date='Aug 2014 - Nov 2016'
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+              <h3 className='vertical-timeline-element-title'>
+                Graduate Student
+              </h3>
+              <h4 className='vertical-timeline-element-subtitle'>
+                Sacramento, CA
+              </h4>
+              <p></p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className='vertical-timeline-element--work'
+              date='Jan 2014 - Jun 2014'
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+              <h3 className='vertical-timeline-element-title'>
+                Software Intern
+              </h3>
+              <h4 className='vertical-timeline-element-subtitle'>
+                Hyderabad, India
+              </h4>
+              <p> </p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
         </div>
       </section>
     </div>
