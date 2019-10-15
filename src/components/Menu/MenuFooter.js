@@ -55,7 +55,7 @@ export default function MenuFooter() {
 
       <li className='socials__item'>
         <a
-          href='https://codesandbox.io/'
+          href='https://codesandbox.io/u/adityak25'
           target='_blank'
           rel='noopener noreferrer'
           className='socials__item__link'
