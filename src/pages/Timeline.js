@@ -39,7 +39,7 @@ export default function TimelinePage() {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className='vertical-timeline-element--work'
-              date='Aug 2014 - Nov 2016'
+              date='Aug 2015 - Jan 2016'
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
               <h3 className='vertical-timeline-element-title'>
                 Graduate Student

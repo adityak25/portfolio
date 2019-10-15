@@ -9,13 +9,12 @@ export default function MenuHeader() {
         to='home'
         spy={true}
         smooth={true}
-        offset={-70}
+        //offset={0}
         duration={500}
-        className='header__title'
-      >
+        className='header__title'>
         Aditya Kankanala
       </Link>
-      <p className='header__tagline'>I'm a frontend developer.</p>
+      <p className='header__tagline'>Front End Developer</p>
     </React.Fragment>
   );
 }

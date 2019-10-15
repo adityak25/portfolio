@@ -7,8 +7,8 @@ export default function AboutPage() {
         <div className='wrap'>
           <h1>hello there!</h1>
           <p>
-            I'm a frontend developer by profession and seeking to be more than
-            that
+            I'm a frontend developer, currently working on React and AngularJS
+            apps.
           </p>
         </div>
       </section>
@@ -19,29 +19,26 @@ export default function AboutPage() {
             <img src={require('./../images/web_developer.png')} alt='' />
           </div>
 
-          <h2 id='features'>Skills</h2>
+          {/* <h2 id='features'>Skills</h2> */}
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua:
-          </p>
+          <p>What I learned to date.</p>
 
           <ul>
             <div className='skills'>
+              <div className='chip'>
+                <span className='chip__label'>Javascript</span>
+              </div>
               <div className='chip'>
                 <span className='chip__label'>React</span>
               </div>
               <div className='chip'>
                 <span className='chip__label'>Redux</span>
               </div>
-              <div className='chip'>
+              {/* <div className='chip'>
                 <span className='chip__label'>Angular</span>
-              </div>
+              </div> */}
               <div className='chip'>
                 <span className='chip__label'>AngularJS</span>
-              </div>
-              <div className='chip'>
-                <span className='chip__label'>Javascript</span>
               </div>
               <div className='chip'>
                 <span className='chip__label'>HTML</span>
@@ -68,7 +65,7 @@ export default function AboutPage() {
                 <span className='chip__label'>MongoDB</span>
               </div>
               <div className='chip'>
-                <span className='chip__label'>Grunt</span>
+                <span className='chip__label'>Webpack</span>
               </div>
               <div className='chip'>
                 <span className='chip__label'>Git</span>

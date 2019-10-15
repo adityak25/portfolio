@@ -1594,8 +1594,8 @@ section {
   align-items: center;
   justify-content: center;
   background: rgba(22, 27, 33, 0.7);
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;

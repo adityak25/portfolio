@@ -14,13 +14,14 @@ export default function ProjectsPage() {
           <div className='portfolio-item'>
             <a
               className='portfolio-item__link'
-              href='#'
-              onClick={e => e.preventDefault()}>
+              href='https://github.com/adityak25/event-book'
+              target='_blank'
+              rel='noopener noreferrer'>
               <div
                 className='portfolio-item__image'
                 style={{
-                  backgroundImage:
-                    "url('https://d1qmdf3vop2l07.cloudfront.net/jovial-peafowl.cloudvent.net/compressed/_min_/fe89e1e859acb2feebca86028e2db97d.jpg')"
+                  backgroundImage: `url(${require('./../images/events.png')})`,
+                  width: '90%'
                 }}></div>
 
               <div className='portfolio-item__content'>
@@ -32,7 +33,7 @@ export default function ProjectsPage() {
                 </div>
               </div>
             </a>
-            <div className='portfolio-item__codelink'>
+            {/* <div className='portfolio-item__codelink'>
               <a
                 href='https://github.com/adityak25'
                 target='_blank'
@@ -45,31 +46,32 @@ export default function ProjectsPage() {
                 rel='noopener noreferrer'>
                 Code
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className='portfolio-item'>
             <a
               className='portfolio-item__link'
-              href='#'
-              onClick={e => e.preventDefault()}>
+              href='https://github.com/adityak25/quick-shop'
+              target='_blank'
+              rel='noopener noreferrer'>
               <div
                 className='portfolio-item__image'
                 style={{
-                  backgroundImage:
-                    "url('https://d1qmdf3vop2l07.cloudfront.net/jovial-peafowl.cloudvent.net/compressed/_min_/2c035e90c04b4151f5d04f14c1687d00.jpg')"
+                  backgroundImage: `url(${require('./../images/quick-shop.png')})`,
+                  width: '90%'
                 }}></div>
 
               <div className='portfolio-item__content'>
                 <div className='portfolio-item__info'>
-                  <h2 className='portfolio-item__title'>Event Book</h2>
+                  <h2 className='portfolio-item__title'>Quick shop</h2>
                   <p className='portfolio-item__subtitle'>
-                    Create, find & reserve events
+                    An e-commerce shopping application
                   </p>
                 </div>
               </div>
             </a>
-            <div className='portfolio-item__codelink'>
+            {/* <div className='portfolio-item__codelink'>
               <a
                 href='https://github.com/adityak25'
                 target='_blank'
@@ -82,7 +84,7 @@ export default function ProjectsPage() {
                 rel='noopener noreferrer'>
                 Code
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
