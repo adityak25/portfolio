@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6242b4b2.chunk.css",
+    "main.js": "/static/js/main.c1b850fd.chunk.js",
+    "main.js.map": "/static/js/main.c1b850fd.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.7302273d.js",
+    "runtime~main.js.map": "/static/js/runtime~main.7302273d.js.map",
+    "static/css/2.a641e29a.chunk.css": "/static/css/2.a641e29a.chunk.css",
+    "static/js/2.7c53dafa.chunk.js": "/static/js/2.7c53dafa.chunk.js",
+    "static/js/2.7c53dafa.chunk.js.map": "/static/js/2.7c53dafa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cebbe10387cb27cfbf02936f67596770.js": "/precache-manifest.cebbe10387cb27cfbf02936f67596770.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.a641e29a.chunk.css.map": "/static/css/2.a641e29a.chunk.css.map",
+    "static/css/main.6242b4b2.chunk.css.map": "/static/css/main.6242b4b2.chunk.css.map",
+    "static/media/events.png": "/static/media/events.c04cd014.png",
+    "static/media/quick-shop.png": "/static/media/quick-shop.f3103fe1.png",
+    "static/media/web_developer.png": "/static/media/web_developer.0f0faa4f.png"
+  }
+}
